@@ -1,45 +1,22 @@
 /* navbar -------------------------------------------------------------------------------------------- */
-li{
+.navbar li{
     list-style-type: none;
-  }
-  a{
-    text-decoration: none;
-  }
-  .nav{
-    width: 100vw;
+    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
   }
   nav{
     width: 100vw;
     background-color: #D6EFFF;
   }
-  ul{
+  .navbar ul{
     margin: 0;
     padding: 0;
-  }
-  
-  body{
-    margin: 0;
-  }
-  ul{
-    margin: 0;
-    padding: 0;
-    
     /*this option by default dispose the elements in a row (flex-direction: row)*/
     display: flex;
   }
-  li{
-    list-style-type: none;  
-    
-    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
-    margin: 0 2vw;
-  }
-  li{
-    list-style-type: none;  
-    margin: 0 2vw;
-    /* our font-size will be 3% of the height of the viewport */
-    font-size: 3vh;
-  }
-  a{
+  .navbar a{
     text-decoration: none;
     
     /*below I changed the color*/
@@ -49,41 +26,56 @@ li{
     /*also changed the font family but that's totally irrelevant*/
     font-family: monospace;
   }
-  a:hover{
+  .navbar a:hover{
     background-color: #C6E9FF;
   }
 
-/* this vertical alignment is optional i just wanna see how it would look */
-@media only screen and (max-width: 500px) {
-    /*shows elements in a column*/
-    ul{
-      flex-direction: column;
-    }
-    
-    /* deletes margin on top or bottom of the a tag*/
-    li{
-      margin: 0;
-    }
-   /* makes sure that the a tag will take the entire screen*/
-    a{
-      display: block;
-    }
-  }
 
+
+  body{
+    margin: 0;
+  }
 
 /* ----------------------------------------------------------------------------------------------------- */
 
 
 #container {
     background-color: lightgrey;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
+#header {
+  font-family: "Mandatory";
+  font-size: 300%;
+}
+
+/* ------------------------------------------------------------------------------------- */
 .Home {
+    background-image: url("./photos/Team_Slide.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);    /*overlay*/
+
+    font-family: "Mandatory";
+
     color: #ffffff;
     background-color: rgb(31, 30, 30);
     text-align: center;
+    padding: 18%;
 }
+
+#welcome {
+  font-size: 550%;
+}
+
+#hiya {
+  font-size: 150%;
+  font-family: "Max-Condensed";
+}
+
+/* ------------------------------------------------------------------------------------- */
 
 .About {
     color: #ffffff;
@@ -263,4 +255,18 @@ div.PDR {margin-left: 0;}
         }
     }
 
+/* fonts ----------------------------------------------------------------*/
+@font-face{
+  font-family: "Mandatory";
+  src: url("./font/Mandatory.ttf");
+}
 
+@font-face{
+  font-family: "RS-BlackPersonal";
+  src: url("./font/RoonaSansBlackPersonal-Pz6B.ttf");
+}
+
+@font-face{
+  font-family: "Max-Condensed";
+  src: url("./font/maxellight/MaxellightCondensed-4BnlW.ttf");
+}
