@@ -47,6 +47,8 @@
 #header {
   font-family: "Mandatory";
   font-size: 300%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -80,22 +82,60 @@
 .About {
     color: #ffffff;
     background-color: rgb(31, 30, 30);
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1px;
+}
+
+#about-info {
+  font-family: "Max-Light";
+  font-size: 20px;
+
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
 .Meet_the_Team {
     color: #ffffff;
     background-color:  rgb(31, 30, 30);
     padding-bottom: 15px;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1px;
 }
 
 .PDR {
     color: #ffffff;
     background-color:  rgb(31, 30, 30);
     text-align: center;
+    padding-bottom: 100%;
 }
 
-#PDRsection {
-    background-color: #0e0a4b;
+.PDRsection {
+    background-color: rgb(31, 30, 30);
+
+    padding-bottom: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1px;
+    color: #ffffff;
+}
+
+.PDRsection #header{
+  padding-left: 5%;
+}
+
+#pdr-header {
+  font-family: "Max-Condensed";
+  font-size: 30px;
+}
+
+.pdr-section {
+  padding-bottom: 40%;
 }
 
 #AliPic {
@@ -198,19 +238,25 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #0e0a4b;
+    background-color: rgb(31, 30, 30);
     color: ghostwhite;
     position: sticky;
     top: 10px;
     height: 100%;
     overflow: auto;
+
+    font-family: "Max-Condensed";
+
+    font-size: 13px;
       }
       
 /* Sidebar links */
 .sidebar a {
     display: block;
     color: rgb(255, 255, 255);
-    padding: 16px;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration: none;
       }
       
@@ -232,7 +278,7 @@
 div.PDR {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    /* height: 1000px; */
       }
       
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -269,4 +315,13 @@ div.PDR {margin-left: 0;}
 @font-face{
   font-family: "Max-Condensed";
   src: url("./font/maxellight/MaxellightCondensed-4BnlW.ttf");
+}
+
+@font-face{
+  font-family: "Max-Light";
+  src: url("./font/maxellight/MaxellightLight-eZ9Wn.ttf");
+}
+@font-face{
+  font-family: "NS-Regular";
+  src: url(./font/NotoSansJP-Regular.otf);
 }
