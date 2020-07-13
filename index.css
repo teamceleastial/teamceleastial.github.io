@@ -1,45 +1,22 @@
 /* navbar -------------------------------------------------------------------------------------------- */
-li{
+.navbar li{
     list-style-type: none;
-  }
-  a{
-    text-decoration: none;
-  }
-  .nav{
-    width: 100vw;
+    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
   }
   nav{
     width: 100vw;
     background-color: #D6EFFF;
   }
-  ul{
+  .navbar ul{
     margin: 0;
     padding: 0;
-  }
-  
-  body{
-    margin: 0;
-  }
-  ul{
-    margin: 0;
-    padding: 0;
-    
     /*this option by default dispose the elements in a row (flex-direction: row)*/
     display: flex;
   }
-  li{
-    list-style-type: none;  
-    
-    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
-    margin: 0 2vw;
-  }
-  li{
-    list-style-type: none;  
-    margin: 0 2vw;
-    /* our font-size will be 3% of the height of the viewport */
-    font-size: 3vh;
-  }
-  a{
+  .navbar a{
     text-decoration: none;
     
     /*below I changed the color*/
@@ -49,61 +26,117 @@ li{
     /*also changed the font family but that's totally irrelevant*/
     font-family: monospace;
   }
-  a:hover{
+  .navbar a:hover{
     background-color: #C6E9FF;
   }
 
-/* this vertical alignment is optional i just wanna see how it would look */
-@media only screen and (max-width: 500px) {
-    /*shows elements in a column*/
-    ul{
-      flex-direction: column;
-    }
-    
-    /* deletes margin on top or bottom of the a tag*/
-    li{
-      margin: 0;
-    }
-   /* makes sure that the a tag will take the entire screen*/
-    a{
-      display: block;
-    }
-  }
 
+
+  body{
+    margin: 0;
+  }
 
 /* ----------------------------------------------------------------------------------------------------- */
 
 
 #container {
     background-color: lightgrey;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
+#header {
+  font-family: "Mandatory";
+  font-size: 300%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* ------------------------------------------------------------------------------------- */
 .Home {
+    background-image: url("./photos/Team_Slide.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);    /*overlay*/
+
+    font-family: "Mandatory";
+
     color: #ffffff;
     background-color: rgb(31, 30, 30);
     text-align: center;
+    padding: 18%;
 }
+
+#welcome {
+  text-indent: 1px;
+  font-size: 550%;
+}
+
+#hiya {
+  font-size: 150%;
+  font-family: "Max-Condensed";
+}
+
+/* ------------------------------------------------------------------------------------- */
 
 .About {
     color: #ffffff;
     background-color: rgb(31, 30, 30);
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1px;
+}
+
+#about-info {
+  font-family: "Max-Light";
+  font-size: 20px;
+
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
 .Meet_the_Team {
     color: #ffffff;
     background-color:  rgb(31, 30, 30);
     padding-bottom: 15px;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1px;
 }
 
 .PDR {
     color: #ffffff;
     background-color:  rgb(31, 30, 30);
     text-align: center;
+    padding-bottom: 100%;
 }
 
-#PDRsection {
-    background-color: #0e0a4b;
+.PDRsection {
+    background-color: rgb(31, 30, 30);
+
+    padding-bottom: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1px;
+    color: #ffffff;
+}
+
+.PDRsection #header{
+  padding-left: 5%;
+}
+
+#pdr-header {
+  font-family: "Max-Condensed";
+  font-size: 30px;
+}
+
+.pdr-section {
+  padding-bottom: 40%;
 }
 
 #AliPic {
@@ -206,41 +239,48 @@ li{
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #0e0a4b;
+    background-color: rgb(31, 30, 30);
     color: ghostwhite;
     position: sticky;
     top: 10px;
     height: 100%;
     overflow: auto;
+
+    font-family: "Max-Condensed";
+
+    font-size: 13px;
       }
       
 /* Sidebar links */
 .sidebar a {
     display: block;
     color: rgb(255, 255, 255);
-    padding: 16px;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration: none;
       }
       
 /* Active/current link */
 .sidebar a.active {
-    background-color: #4e4a8a;
-    color: white;
+    /* background-color: #4e4a8a; */
+    color: rgb(117, 111, 111);
     text-size-adjust: 12;
       }
       
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-    background-color: #4e4a8a;
-    color: white;
+    /* background-color: #4e4a8a; */
+    color: rgb(117, 111, 111);
+    text-decoration: none;
     text-size-adjust: 12;
-      }
+}
       
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.PDR {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    /* height: 1000px; */
       }
       
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -263,4 +303,27 @@ div.PDR {margin-left: 0;}
         }
     }
 
+/* fonts ----------------------------------------------------------------*/
+@font-face{
+  font-family: "Mandatory";
+  src: url("./font/Mandatory.ttf");
+}
 
+@font-face{
+  font-family: "RS-BlackPersonal";
+  src: url("./font/RoonaSansBlackPersonal-Pz6B.ttf");
+}
+
+@font-face{
+  font-family: "Max-Condensed";
+  src: url("./font/maxellight/MaxellightCondensed-4BnlW.ttf");
+}
+
+@font-face{
+  font-family: "Max-Light";
+  src: url("./font/maxellight/MaxellightLight-eZ9Wn.ttf");
+}
+@font-face{
+  font-family: "NS-Regular";
+  src: url(./font/NotoSansJP-Regular.otf);
+}
