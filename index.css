@@ -157,96 +157,13 @@ body{
 }
 
 .pdr-section {
-  padding-bottom: 40%;
 }
 
-#AliPic {
-    float: left;
-}
-#AliInfo {
-    text-align: center;
-    float:right;
+.pdr-section img {
+  width: 1000px;
 }
 
-#BretPic {
-    float: left;
-}
-#BretInfo {
-    text-align: center;
-    float:right;
-}
 
-#DanielPic {
-    float: left;
-}
-#DanielInfo {
-    text-align: center;
-    float:right;
-}
-
-#FarhanPic {
-    float: left;
-}
-#FarhanInfo {
-    text-align: center;
-    float:right;
-}
-
-#KatiePic {
-    float: left;
-}
-#KatieInfo {
-    text-align: center;
-    float:right;
-}
-
-#MadelinePic {
-    float: left;
-}
-#MadelineInfo {
-    text-align: center;
-    float:right;
-}
-
-#MaiPic {
-    float: left;
-}
-#MaiInfo {
-    text-align: center;
-    float:right;
-}
-
-#MamadouPic {
-    float: left;
-}
-#MamadouInfo {
-    text-align: center;
-    float:right;
-}
-
-#RachelPic {
-    float: left;
-}
-#RachelInfo {
-    text-align: center;
-    float:right;
-}
-
-#TobiPic {
-    float: left;
-}
-#TobiInfo {
-    text-align: center;
-    float:right;
-}
-
-#WesPic {
-    float: left;
-}
-#WesInfo {
-    text-align: center;
-    float:right;
-}
 
 .clearfix{
     clear:both
