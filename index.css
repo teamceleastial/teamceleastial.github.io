@@ -1,45 +1,10 @@
-/* navbar -------------------------------------------------------------------------------------------- */
-.navbar li{
-    list-style-type: none;
-    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
-    margin: 0 2vw;
-    /* our font-size will be 3% of the height of the viewport */
-    font-size: 3vh;
-  }
-
-  .navbar ul{
-    margin: 0;
-    padding: 0;
-    /*this option by default dispose the elements in a row (flex-direction: row)*/
-    display: flex;
-  }
-  .navbar a{
-    text-decoration: none;
-    
-    /*below I changed the color*/
-    color: black;
-    /*I added some padding*/
-    padding: 2vw;
-    /*also changed the font family but that's totally irrelevant*/
-    font-family: monospace;
-  }
-  .navbar a:hover{
-    background-color: #C6E9FF;
-  }
-  .nav-right{
-    float: right;
-  }
-
-
-  body{
-    margin: 0;
-  }
-
-/* ----------------------------------------------------------------------------------------------------- */
-
+html{
+  /* background-color: rgb(255, 255, 255); */
+  scroll-behavior: smooth;
+}
 
 #container {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     /* padding: 5px; */
 }
 
@@ -49,6 +14,51 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
+body{
+  margin: 0;
+}
+
+/* navbar -------------------------------------------------------------------------------------------- */
+.bar {
+  overflow: hidden;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /* background-image: url("./photos/stars.jpg");
+  opacity: 70%; */
+  /* font-family: "NS-Light"; */
+  position: fixed;
+  width: 100%;
+  color: white;
+  background-color: rgb(31, 30, 30);
+
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-right a{
+  
+  color: white;
+  text-decoration: none;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-top: 100%;
+  padding-bottom: 100%;
+  font-size: 17px;
+}
+
+.nav-right a:hover {
+  /* background-image: url("./photos/moonnew.jpg"); */
+  color: rgb(255, 31, 31);
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
 
 /* ------------------------------------------------------------------------------------- */
 .Home {
@@ -147,96 +157,13 @@
 }
 
 .pdr-section {
-  padding-bottom: 40%;
 }
 
-#AliPic {
-    float: left;
-}
-#AliInfo {
-    text-align: center;
-    float:right;
+.pdr-section img {
+  width: 1000px;
 }
 
-#BretPic {
-    float: left;
-}
-#BretInfo {
-    text-align: center;
-    float:right;
-}
 
-#DanielPic {
-    float: left;
-}
-#DanielInfo {
-    text-align: center;
-    float:right;
-}
-
-#FarhanPic {
-    float: left;
-}
-#FarhanInfo {
-    text-align: center;
-    float:right;
-}
-
-#KatiePic {
-    float: left;
-}
-#KatieInfo {
-    text-align: center;
-    float:right;
-}
-
-#MadelinePic {
-    float: left;
-}
-#MadelineInfo {
-    text-align: center;
-    float:right;
-}
-
-#MaiPic {
-    float: left;
-}
-#MaiInfo {
-    text-align: center;
-    float:right;
-}
-
-#MamadouPic {
-    float: left;
-}
-#MamadouInfo {
-    text-align: center;
-    float:right;
-}
-
-#RachelPic {
-    float: left;
-}
-#RachelInfo {
-    text-align: center;
-    float:right;
-}
-
-#TobiPic {
-    float: left;
-}
-#TobiInfo {
-    text-align: center;
-    float:right;
-}
-
-#WesPic {
-    float: left;
-}
-#WesInfo {
-    text-align: center;
-    float:right;
-}
 
 .clearfix{
     clear:both
@@ -245,10 +172,10 @@
 /*.mySlides {display:none;}#*/
 
 .sidebar {
+    padding-top: 100px;
     width: 180px;
     float: left; 
     margin: 0;
-    padding: 0;
     width: 200px;
     background-color: rgb(31, 30, 30);
     color: ghostwhite;
