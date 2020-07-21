@@ -136,6 +136,7 @@ a:active {
 #intro img{
   margin-right: 20px;
   float: left;
+  width: 300px;
 }
 
 #intro a img{
@@ -194,7 +195,7 @@ a:active {
 }
 
 video{
-  width: 700px;
+  width: 60%;
 }
 
 .video{
