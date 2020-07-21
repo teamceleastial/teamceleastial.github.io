@@ -3,10 +3,6 @@ html{
   scroll-behavior: smooth;
 }
 
-#container {
-    /* background-color: lightgrey; */
-    /* padding: 5px; */
-}
 
 #header {
   font-family: "Mandatory";
@@ -69,7 +65,7 @@ a:active {
 /* ------------------------------------------------------------------------------------- */
 .Home {
     background-image: url("./photos/Team_Slide.png");
-    background-size: 60%;
+    background-size: 1100px;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -107,10 +103,18 @@ a:active {
 
 #about-info {
   font-family: "Max-Light";
-  font-size: 20px;
+  font-size: 150%;
 
   padding-right: 8%;
   padding-left: 8%;
+}
+
+#logo {
+  text-align: center;
+}
+
+#logo img {
+  width: 300px;
 }
 
 .Meet_the_Team {
@@ -134,8 +138,14 @@ a:active {
   float: left;
 }
 
+#intro a img{
+  float: right;
+  width: 60px;
+}
+
 #intro p{
   font-family: "Max-Light";
+  font-size: 150%;
 }
 
 
@@ -161,17 +171,40 @@ a:active {
   padding-left: 5%;
 }
 
+.PDRsection p{
+  padding-right: 8%;
+  padding-left: 8%;
+  font-family: "Max-Light";
+  font-size: 150%;
+}
+
+.PDRsection img{
+  width: 100px;
+}
+
+
+.PDRsection video{
+  text-align: center;
+  font-family: "Max-Light";
+}
+
 #pdr-header {
   font-family: "Max-Condensed";
   font-size: 30px;
 }
 
-.pdr-section {
+video{
+  width: 700px;
+}
+
+.video{
+  text-align: center;
 }
 
 .pdr-section img {
   width: 75%;
 }
+
 
 
 
@@ -186,7 +219,7 @@ a:active {
     width: 180px;
     float: left; 
     margin: 0;
-    width: 200px;
+    width: 250px;
     background-color: rgb(31, 30, 30);
     color: ghostwhite;
     position: sticky;
