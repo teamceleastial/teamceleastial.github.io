@@ -1,7 +1,13 @@
 html{
   /* background-color: rgb(255, 255, 255); */
   scroll-behavior: smooth;
+  background-color:  rgb(31, 30, 30);
 }
+
+/* .all{
+  background-color:  rgb(31, 30, 30);
+  margin: 0;
+} */
 
 
 #header {
@@ -285,6 +291,22 @@ div.PDR {
     padding: 1px 16px;
     /* height: 1000px; */
       }
+
+.bottom {
+  background-color:  rgb(31, 30, 30);
+  text-align: center;
+  font-family: "Max-Condensed";
+  color: white;
+}
+
+.bottom a {
+  color: rgb(255, 175, 175);
+}
+
+.bottom a:hover{
+  color: rgb(253, 65, 65);
+  text-decoration: none;
+}
       
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
