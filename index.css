@@ -324,6 +324,21 @@ div.PDR {margin-left: 0;}
   font-size: 120%;
 }
 
+#intro p{
+  /* font-family: "Max-Light"; */
+  font-size: 120%;
+}
+
+
+
+#about-info {
+  /* font-family: "Max-Light"; */
+  font-size: 120%;
+
+  /* padding-right: 8%;
+  padding-left: 8%; */
+}
+
 #header{
   font-size: 40px;
 }
