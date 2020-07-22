@@ -19,6 +19,15 @@ a:active {
   color: rgb(117, 111, 111);
 }
 
+h.bold{
+  font-family: "Max-Old";
+}
+
+h.disclaimer{
+  font-family: "Max-Condensed";
+  color: red;
+}
+
 /* navbar -------------------------------------------------------------------------------------------- */
 .bar {
   overflow: hidden;
@@ -288,6 +297,14 @@ div.PDR {
 
 .sidebar a {text-align: center;}
 div.PDR {margin-left: 0;}
+
+.Meet_the_Team h {
+  font-size: 120%;
+}
+
+#header{
+  font-size: 40px;
+}
       }
       
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -318,6 +335,12 @@ div.PDR {margin-left: 0;}
   font-family: "Max-Light";
   src: url("./font/maxellight/MaxellightLight-eZ9Wn.ttf");
 }
+
+@font-face{
+  font-family: "Max-Old";
+  src: url("./font/maxellight/Maxellight-owvKo.ttf");
+}
+
 @font-face{
   font-family: "NS-Regular";
   src: url(./font/NotoSansJP-Regular.otf);
